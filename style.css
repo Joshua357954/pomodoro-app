@@ -201,3 +201,16 @@ svg{
 	font-size: 1rem;
 	font-weight: bold;
 }
+
+
+@media screen and (max-width: 760px){
+	body{
+		flex-direction: column;
+	}
+
+	.utility{
+		flex-direction: row;
+		width:100%;
+		justify-content: space-around;
+	}
+}

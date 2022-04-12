@@ -71,6 +71,7 @@ function start(){
 
 	else if (count>3){
 		console.log("kkop")
+		
 		count=0
 	}
 
@@ -90,6 +91,7 @@ function start(){
 		addActive(3)
 	}
 
+
 }
 
 // let hello=null , hasStarted=false , paused=false
@@ -103,17 +105,20 @@ function beginPomodoro(){
 
 			if (count>3){
 				console.log("kkop")
+				pausePlay.innerHTML="Done"
+				pausePlay.style.color="#9acef2"
 				count=0
 			}
 
 			let pop=pomTime[pomTitles[count]][0];
-
+			
 			if (! pop <= 0 && count<5) {
-
+		
 				start() 
 			}
 
 			else {
+
 				clearInterval();
 			}	
 	},1000)
